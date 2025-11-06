@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum input nilai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .alert {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid m-2">
+            <h1 class="navbar-brand">Portal Akademik</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Input Nilai</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="display.html">Lihat Data Mahasiswa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form id="dataForm">
+        <div class="container p-5 mt-5">
+            <h2 class="text-center p-3">Form Input Nilai Mahasiswa</h2>
+            <div class="alert alert-success" role="alert">
+                Berhasil menambahkan data nilai mahasiswa!
+            </div>
+
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="" class="form-control" id="nama" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="nim" class="form-label">Nim</label>
+                <input type="" class="form-control" id="nim">
+            </div>
+            <div class=" mb-2">
+                <label for="mk" class="form-label">Mata Kuliah</label>
+                <select class="form-select" aria-label="Default select example" id="mk">
+                    <option selected>Pilih mata kuliah...</option>
+                    <option value="Kalkulus">Kalkulus</option>
+                    <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                    <option value="Algoritma">Algoritma</option>
+                    <option value="Fisika Dasar">Fisika Dasar</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="nilai" class="form-label">Nilai</label>
+                <input type="" class="form-control" id="nilai">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
